@@ -113,7 +113,7 @@ sub parseMqsc
     chomp $line;                         #
     next if $line =~ /^\s*$/ ;           #
                                          #
-    if( $line =~ /(AMQ\d{4}):/ )         #
+    if( $line =~ /(AMQ\d{4})\w:/ )       #
     {                                    #
       my $amq = $1;                      #
       if( $amq eq 'AMQ8145' ||           # Connection broken.
